@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		860B4C302AE95F2400977358 /* ClimAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C2F2AE95F2400977358 /* ClimAppApp.swift */; };
-		860B4C322AE95F2400977358 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C312AE95F2400977358 /* ContentView.swift */; };
 		860B4C342AE95F2500977358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860B4C332AE95F2500977358 /* Assets.xcassets */; };
 		860B4C372AE95F2500977358 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860B4C362AE95F2500977358 /* Preview Assets.xcassets */; };
 		860B4C412AE95F2500977358 /* ClimAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C402AE95F2500977358 /* ClimAppTests.swift */; };
 		860B4C4B2AE95F2500977358 /* ClimAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C4A2AE95F2500977358 /* ClimAppUITests.swift */; };
 		860B4C4D2AE95F2500977358 /* ClimAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C4C2AE95F2500977358 /* ClimAppUITestsLaunchTests.swift */; };
+		860B4C5A2AE9612C00977358 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C592AE9612C00977358 /* Assets.swift */; };
+		860B4C5C2AE964F700977358 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C5B2AE964F700977358 /* WelcomeView.swift */; };
+		860B4C5E2AE9651F00977358 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C5D2AE9651F00977358 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		860B4C2C2AE95F2400977358 /* ClimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		860B4C2F2AE95F2400977358 /* ClimAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimAppApp.swift; sourceTree = "<group>"; };
-		860B4C312AE95F2400977358 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		860B4C332AE95F2500977358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		860B4C362AE95F2500977358 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		860B4C3C2AE95F2500977358 /* ClimAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,9 @@
 		860B4C462AE95F2500977358 /* ClimAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		860B4C4A2AE95F2500977358 /* ClimAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimAppUITests.swift; sourceTree = "<group>"; };
 		860B4C4C2AE95F2500977358 /* ClimAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		860B4C592AE9612C00977358 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		860B4C5B2AE964F700977358 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		860B4C5D2AE9651F00977358 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				860B4C2F2AE95F2400977358 /* ClimAppApp.swift */,
-				860B4C312AE95F2400977358 /* ContentView.swift */,
+				860B4C5B2AE964F700977358 /* WelcomeView.swift */,
+				860B4C5D2AE9651F00977358 /* MainView.swift */,
+				860B4C592AE9612C00977358 /* Assets.swift */,
 				860B4C332AE95F2500977358 /* Assets.xcassets */,
 				860B4C352AE95F2500977358 /* Preview Content */,
 			);
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				860B4C322AE95F2400977358 /* ContentView.swift in Sources */,
 				860B4C302AE95F2400977358 /* ClimAppApp.swift in Sources */,
+				860B4C5E2AE9651F00977358 /* MainView.swift in Sources */,
+				860B4C5C2AE964F700977358 /* WelcomeView.swift in Sources */,
+				860B4C5A2AE9612C00977358 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
