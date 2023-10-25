@@ -9,4 +9,9 @@ import Foundation
 
 class Assets {
     static let forest = "forest"
+    static let smallLogo = "small-logo"
+}
+
+class Colors {
+    static let background = "background"
 }
