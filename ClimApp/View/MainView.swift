@@ -10,13 +10,13 @@ import SwiftUI
 struct MainView: View {
     
     let projects = Mock.projects
-    
     let text = """
     Let's neutralise your 
     carbon footprint
     """
-    
     let midScreenHeight = UIScreen.main.bounds.size.height / 2
+    
+    @State var showAllProjects = false
     
     var body: some View {
         ZStack {
@@ -66,7 +66,9 @@ struct MainView: View {
                             .font(.system(size: 20, weight: .bold))
                             .foregroundStyle(.black)
                         Spacer()
-                        Button(action: {}) {
+                        Button(action: {
+                            showAllProjects = true
+                        }) {
                             Text("See all")
                                 .font(.headline)
                                 .foregroundStyle(.blue)
@@ -84,7 +86,7 @@ struct MainView: View {
                                 ZStack(alignment: .bottom) {
                                     Image(project.image)
                                         .resizable()
-                                        .scaledToFill()
+//                                        .scaledToFill()
                                         .frame(width: 250, height: 150)
                                         .clipShape(RoundedRectangle(cornerRadius: 10))
                                     
@@ -124,6 +126,9 @@ struct MainView: View {
         .ignoresSafeArea()
         .foregroundStyle(Color.background)
         .navigationBarBackButtonHidden()
+        .navigationDestination(isPresented: $showAllProjects) {
+            ProjectsView()
+        }
     }
 }
 

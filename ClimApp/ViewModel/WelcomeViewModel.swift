@@ -10,7 +10,7 @@ import Foundation
 final class WelcomeViewModel: ObservableObject {
     let title = """
     The time to
-    act is
+    act is 
     """
     let now = "now"
     let dot = "."
