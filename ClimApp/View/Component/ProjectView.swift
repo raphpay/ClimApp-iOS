@@ -10,8 +10,8 @@ import SwiftUI
 struct ProjectView: View {
     
     var project: Project
-    var width: CGFloat = .infinity
-    var height: CGFloat = .infinity
+    var width: CGFloat = 300
+    var height: CGFloat = 300
     
     var body: some View {
         ZStack(alignment: .bottom) {

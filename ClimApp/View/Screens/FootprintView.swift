@@ -11,6 +11,8 @@ struct FootprintView: View {
     
     @Environment(\.dismiss) var dismiss
     @State var showSecondMessage = false
+    @State var number = 0.0
+    let targetNumber = 19.50
     
     var body: some View {
         ZStack {
@@ -28,7 +30,7 @@ struct FootprintView: View {
                     Spacer()
                     
                     VStack {
-                        Text("19.50")
+                        Text(String(format: "%.2f", number))
                             .font(.system(size: 50, weight: .bold))
                         
                         Text("Tons CO2 e")
@@ -63,8 +65,9 @@ struct FootprintView: View {
         .navigationBarBackButtonHidden()
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                withAnimation {
+                withAnimation() {
                     showSecondMessage = true
+                    number = targetNumber
                 }
             }
         }

@@ -10,12 +10,13 @@ import SwiftUI
 struct ProjectsView: View {
     
     let projects = Mock.projects
+    let width = UIScreen.main.bounds.width - 32
     
     var body: some View {
         ScrollView {
             VStack {
                 ForEach(projects) { project in
-                    ProjectView(project: project, height: 300)
+                    ProjectView(project: project, width: width, height: 300)
                 }
             }
         }
