@@ -22,6 +22,8 @@
 		868AB8412AEA5B9900D3B256 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8402AEA5B9900D3B256 /* ProjectView.swift */; };
 		868AB8452AEA601700D3B256 /* FootprintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8442AEA601700D3B256 /* FootprintView.swift */; };
 		868AB8472AEA603200D3B256 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8462AEA603200D3B256 /* BackgroundImage.swift */; };
+		868AB8492AEA64BA00D3B256 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8482AEA64BA00D3B256 /* MessageView.swift */; };
+		868AB84B2AEA653500D3B256 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB84A2AEA653500D3B256 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		868AB8402AEA5B9900D3B256 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		868AB8442AEA601700D3B256 /* FootprintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintView.swift; sourceTree = "<group>"; };
 		868AB8462AEA603200D3B256 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
+		868AB8482AEA64BA00D3B256 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		868AB84A2AEA653500D3B256 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				868AB8362AEA50D300D3B256 /* Project.swift */,
+				868AB84A2AEA653500D3B256 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 			children = (
 				868AB8402AEA5B9900D3B256 /* ProjectView.swift */,
 				868AB8462AEA603200D3B256 /* BackgroundImage.swift */,
+				868AB8482AEA64BA00D3B256 /* MessageView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -335,8 +341,10 @@
 				868AB8472AEA603200D3B256 /* BackgroundImage.swift in Sources */,
 				860B4C5C2AE964F700977358 /* WelcomeView.swift in Sources */,
 				868AB83F2AEA583000D3B256 /* ProjectsView.swift in Sources */,
+				868AB8492AEA64BA00D3B256 /* MessageView.swift in Sources */,
 				868AB8372AEA50D300D3B256 /* Project.swift in Sources */,
 				868AB8412AEA5B9900D3B256 /* ProjectView.swift in Sources */,
+				868AB84B2AEA653500D3B256 /* Message.swift in Sources */,
 				860B4C5A2AE9612C00977358 /* Assets.swift in Sources */,
 				868AB8452AEA601700D3B256 /* FootprintView.swift in Sources */,
 			);
