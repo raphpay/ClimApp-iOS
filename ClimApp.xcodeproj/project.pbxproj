@@ -145,10 +145,8 @@
 		868AB83A2AEA57A500D3B256 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				860B4C5B2AE964F700977358 /* WelcomeView.swift */,
-				860B4C5D2AE9651F00977358 /* MainView.swift */,
-				868AB83E2AEA583000D3B256 /* ProjectsView.swift */,
-				868AB8402AEA5B9900D3B256 /* ProjectView.swift */,
+				868AB8432AEA5FA300D3B256 /* Screens */,
+				868AB8422AEA5F9D00D3B256 /* Component */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +173,24 @@
 				860B4C592AE9612C00977358 /* Assets.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		868AB8422AEA5F9D00D3B256 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				868AB8402AEA5B9900D3B256 /* ProjectView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		868AB8432AEA5FA300D3B256 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				860B4C5B2AE964F700977358 /* WelcomeView.swift */,
+				860B4C5D2AE9651F00977358 /* MainView.swift */,
+				868AB83E2AEA583000D3B256 /* ProjectsView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
