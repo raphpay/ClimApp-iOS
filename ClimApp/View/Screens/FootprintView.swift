@@ -10,35 +10,64 @@ import SwiftUI
 struct FootprintView: View {
     
     @Environment(\.dismiss) var dismiss
+    @State var showSecondMessage = false
     
     var body: some View {
         ZStack {
             BackgroundImage()
             
             VStack {
-                backButton
+                HStack {
+                    Button(action: { dismiss() }, label: {
+                        Image(systemName: "chevron.left")
+                            .imageScale(.large)
+                            .bold()
+                            .foregroundStyle(.white)
+                    })
+                    
+                    Spacer()
+                    
+                    VStack {
+                        Text("19.50")
+                            .font(.system(size: 50, weight: .bold))
+                        
+                        Text("Tons CO2 e")
+                            .font(.system(size: 20))
+                    }
+                    .foregroundStyle(.white)
+                    
+                    Spacer()
+                }
+                .padding(.horizontal)
                 
                 Spacer()
                 
                 MessageView(message: Mock.messages[0].value)
+                
+                if showSecondMessage {
+                    MessageView(message: Mock.messages[1].value)
+                }
+                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Image(systemName: "arrow.right")
+                        .imageScale(.large)
+                        .bold()
+                })
+                .frame(width: 150, height: 55)
+                .background(Color.green)
+                .foregroundColor(.white)
+                .clipShape(Capsule())
             }
             .padding(.horizontal)
         }
         .navigationBarBackButtonHidden()
-    }
-    
-    var backButton: some View {
-        HStack {
-            Button(action: { dismiss() }, label: {
-                Image(systemName: "chevron.left")
-                    .imageScale(.large)
-                    .bold()
-                    .foregroundStyle(.white)
-            })
-            
-            Spacer()
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                withAnimation {
+                    showSecondMessage = true
+                }
+            }
         }
-        .padding(.horizontal)
     }
 }
 
