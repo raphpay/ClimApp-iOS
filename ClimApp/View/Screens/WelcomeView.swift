@@ -13,11 +13,7 @@ struct WelcomeView: View {
     
     var body: some View {
         ZStack {
-            Image(Assets.forest)
-                .resizable()
-                .scaledToFill()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .edgesIgnoringSafeArea(.all)
+            BackgroundImage()
             
             VStack(alignment: .center) {
                 Spacer()

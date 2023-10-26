@@ -19,6 +19,8 @@ struct ProjectsView: View {
                 }
             }
         }
+        .navigationTitle("Our projects")
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 

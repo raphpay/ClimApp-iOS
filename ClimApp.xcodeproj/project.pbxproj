@@ -20,6 +20,8 @@
 		868AB8392AEA55E200D3B256 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8382AEA55E200D3B256 /* WelcomeViewModel.swift */; };
 		868AB83F2AEA583000D3B256 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB83E2AEA583000D3B256 /* ProjectsView.swift */; };
 		868AB8412AEA5B9900D3B256 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8402AEA5B9900D3B256 /* ProjectView.swift */; };
+		868AB8452AEA601700D3B256 /* FootprintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8442AEA601700D3B256 /* FootprintView.swift */; };
+		868AB8472AEA603200D3B256 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8462AEA603200D3B256 /* BackgroundImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		868AB8382AEA55E200D3B256 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		868AB83E2AEA583000D3B256 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		868AB8402AEA5B9900D3B256 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		868AB8442AEA601700D3B256 /* FootprintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintView.swift; sourceTree = "<group>"; };
+		868AB8462AEA603200D3B256 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				868AB8402AEA5B9900D3B256 /* ProjectView.swift */,
+				868AB8462AEA603200D3B256 /* BackgroundImage.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			children = (
 				860B4C5B2AE964F700977358 /* WelcomeView.swift */,
 				860B4C5D2AE9651F00977358 /* MainView.swift */,
+				868AB8442AEA601700D3B256 /* FootprintView.swift */,
 				868AB83E2AEA583000D3B256 /* ProjectsView.swift */,
 			);
 			path = Screens;
@@ -326,11 +332,13 @@
 				860B4C302AE95F2400977358 /* ClimAppApp.swift in Sources */,
 				868AB8392AEA55E200D3B256 /* WelcomeViewModel.swift in Sources */,
 				860B4C5E2AE9651F00977358 /* MainView.swift in Sources */,
+				868AB8472AEA603200D3B256 /* BackgroundImage.swift in Sources */,
 				860B4C5C2AE964F700977358 /* WelcomeView.swift in Sources */,
 				868AB83F2AEA583000D3B256 /* ProjectsView.swift in Sources */,
 				868AB8372AEA50D300D3B256 /* Project.swift in Sources */,
 				868AB8412AEA5B9900D3B256 /* ProjectView.swift in Sources */,
 				860B4C5A2AE9612C00977358 /* Assets.swift in Sources */,
+				868AB8452AEA601700D3B256 /* FootprintView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

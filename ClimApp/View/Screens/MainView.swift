@@ -17,6 +17,7 @@ struct MainView: View {
     let midScreenHeight = UIScreen.main.bounds.size.height / 2
     
     @State var showAllProjects = false
+    @State var showCarbonFootprintView = false
     
     var body: some View {
         ZStack {
@@ -96,7 +97,9 @@ struct MainView: View {
                 .frame(height : midScreenHeight)
             }
             
-            Button(action: {}) {
+            Button(action: {
+                showCarbonFootprintView = true
+            }) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
                         .foregroundColor(.green)
@@ -112,6 +115,9 @@ struct MainView: View {
         .navigationBarBackButtonHidden()
         .navigationDestination(isPresented: $showAllProjects) {
             ProjectsView()
+        }
+        .navigationDestination(isPresented: $showCarbonFootprintView) {
+            FootprintView()
         }
     }
 }
