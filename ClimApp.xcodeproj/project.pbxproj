@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		860B4C302AE95F2400977358 /* ClimAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C2F2AE95F2400977358 /* ClimAppApp.swift */; };
-		860B4C322AE95F2400977358 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C312AE95F2400977358 /* ContentView.swift */; };
 		860B4C342AE95F2500977358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860B4C332AE95F2500977358 /* Assets.xcassets */; };
 		860B4C372AE95F2500977358 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860B4C362AE95F2500977358 /* Preview Assets.xcassets */; };
 		860B4C412AE95F2500977358 /* ClimAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C402AE95F2500977358 /* ClimAppTests.swift */; };
 		860B4C4B2AE95F2500977358 /* ClimAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C4A2AE95F2500977358 /* ClimAppUITests.swift */; };
 		860B4C4D2AE95F2500977358 /* ClimAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C4C2AE95F2500977358 /* ClimAppUITestsLaunchTests.swift */; };
+		860B4C5A2AE9612C00977358 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C592AE9612C00977358 /* Assets.swift */; };
+		860B4C5C2AE964F700977358 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C5B2AE964F700977358 /* WelcomeView.swift */; };
+		860B4C5E2AE9651F00977358 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C5D2AE9651F00977358 /* MainView.swift */; };
+		868AB8372AEA50D300D3B256 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8362AEA50D300D3B256 /* Project.swift */; };
+		868AB8392AEA55E200D3B256 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8382AEA55E200D3B256 /* WelcomeViewModel.swift */; };
+		868AB83F2AEA583000D3B256 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB83E2AEA583000D3B256 /* ProjectsView.swift */; };
+		868AB8412AEA5B9900D3B256 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8402AEA5B9900D3B256 /* ProjectView.swift */; };
+		868AB8452AEA601700D3B256 /* FootprintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8442AEA601700D3B256 /* FootprintView.swift */; };
+		868AB8472AEA603200D3B256 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8462AEA603200D3B256 /* BackgroundImage.swift */; };
+		868AB8492AEA64BA00D3B256 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8482AEA64BA00D3B256 /* MessageView.swift */; };
+		868AB84B2AEA653500D3B256 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB84A2AEA653500D3B256 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,6 @@
 /* Begin PBXFileReference section */
 		860B4C2C2AE95F2400977358 /* ClimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		860B4C2F2AE95F2400977358 /* ClimAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimAppApp.swift; sourceTree = "<group>"; };
-		860B4C312AE95F2400977358 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		860B4C332AE95F2500977358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		860B4C362AE95F2500977358 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		860B4C3C2AE95F2500977358 /* ClimAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +53,17 @@
 		860B4C462AE95F2500977358 /* ClimAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		860B4C4A2AE95F2500977358 /* ClimAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimAppUITests.swift; sourceTree = "<group>"; };
 		860B4C4C2AE95F2500977358 /* ClimAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		860B4C592AE9612C00977358 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		860B4C5B2AE964F700977358 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		860B4C5D2AE9651F00977358 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		868AB8362AEA50D300D3B256 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		868AB8382AEA55E200D3B256 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		868AB83E2AEA583000D3B256 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		868AB8402AEA5B9900D3B256 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		868AB8442AEA601700D3B256 /* FootprintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintView.swift; sourceTree = "<group>"; };
+		868AB8462AEA603200D3B256 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
+		868AB8482AEA64BA00D3B256 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		868AB84A2AEA653500D3B256 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				860B4C2F2AE95F2400977358 /* ClimAppApp.swift */,
-				860B4C312AE95F2400977358 /* ContentView.swift */,
+				868AB83C2AEA57AF00D3B256 /* Model */,
+				868AB83A2AEA57A500D3B256 /* View */,
+				868AB83B2AEA57AA00D3B256 /* ViewModel */,
+				868AB83D2AEA57B700D3B256 /* Utils */,
 				860B4C332AE95F2500977358 /* Assets.xcassets */,
 				860B4C352AE95F2500977358 /* Preview Content */,
 			);
@@ -125,6 +148,61 @@
 				860B4C4C2AE95F2500977358 /* ClimAppUITestsLaunchTests.swift */,
 			);
 			path = ClimAppUITests;
+			sourceTree = "<group>";
+		};
+		868AB83A2AEA57A500D3B256 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				868AB8432AEA5FA300D3B256 /* Screens */,
+				868AB8422AEA5F9D00D3B256 /* Component */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		868AB83B2AEA57AA00D3B256 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				868AB8382AEA55E200D3B256 /* WelcomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		868AB83C2AEA57AF00D3B256 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				868AB8362AEA50D300D3B256 /* Project.swift */,
+				868AB84A2AEA653500D3B256 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		868AB83D2AEA57B700D3B256 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				860B4C592AE9612C00977358 /* Assets.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		868AB8422AEA5F9D00D3B256 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				868AB8402AEA5B9900D3B256 /* ProjectView.swift */,
+				868AB8462AEA603200D3B256 /* BackgroundImage.swift */,
+				868AB8482AEA64BA00D3B256 /* MessageView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		868AB8432AEA5FA300D3B256 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				860B4C5B2AE964F700977358 /* WelcomeView.swift */,
+				860B4C5D2AE9651F00977358 /* MainView.swift */,
+				868AB8442AEA601700D3B256 /* FootprintView.swift */,
+				868AB83E2AEA583000D3B256 /* ProjectsView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +335,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				860B4C322AE95F2400977358 /* ContentView.swift in Sources */,
 				860B4C302AE95F2400977358 /* ClimAppApp.swift in Sources */,
+				868AB8392AEA55E200D3B256 /* WelcomeViewModel.swift in Sources */,
+				860B4C5E2AE9651F00977358 /* MainView.swift in Sources */,
+				868AB8472AEA603200D3B256 /* BackgroundImage.swift in Sources */,
+				860B4C5C2AE964F700977358 /* WelcomeView.swift in Sources */,
+				868AB83F2AEA583000D3B256 /* ProjectsView.swift in Sources */,
+				868AB8492AEA64BA00D3B256 /* MessageView.swift in Sources */,
+				868AB8372AEA50D300D3B256 /* Project.swift in Sources */,
+				868AB8412AEA5B9900D3B256 /* ProjectView.swift in Sources */,
+				868AB84B2AEA653500D3B256 /* Message.swift in Sources */,
+				860B4C5A2AE9612C00977358 /* Assets.swift in Sources */,
+				868AB8452AEA601700D3B256 /* FootprintView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
