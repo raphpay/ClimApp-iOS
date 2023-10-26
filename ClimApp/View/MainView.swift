@@ -83,23 +83,7 @@ struct MainView: View {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             ForEach(projects) { project in
-                                ZStack(alignment: .bottom) {
-                                    Image(project.image)
-                                        .resizable()
-//                                        .scaledToFill()
-                                        .frame(width: 250, height: 150)
-                                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                                    
-                                    VStack(alignment: .leading) {
-                                        Spacer()
-                                        Text(project.title)
-                                            .font(.system(size: 20, weight: .bold))
-                                        Text(project.subtitle)
-                                            .font(.system(size: 16, weight: .regular))
-                                    }
-                                    .padding()
-                                }
-                                .frame(width: 250, height: 150)
+                                ProjectView(project: project, width: 250, height: 150)
                             }
                         }
                     }

@@ -15,28 +15,13 @@ struct ProjectsView: View {
         ScrollView {
             VStack {
                 ForEach(projects) { project in
-                    ZStack(alignment: .bottom) {
-                        Image(project.image)
-                            .resizable()
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
-
-                        VStack(alignment: .leading) {
-                            Spacer()
-                            Text(project.title)
-                                .font(.system(size: 20, weight: .bold))
-                            Text(project.subtitle)
-                                .font(.system(size: 16, weight: .regular))
-                        }
-                        .foregroundStyle(.white)
-                        .padding()
-                    }
-                    .frame(height: 300)
-                    .padding()
+                    ProjectView(project: project, height: 300)
                 }
             }
         }
     }
 }
+
 
 
 #Preview {
