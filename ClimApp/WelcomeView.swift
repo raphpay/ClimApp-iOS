@@ -9,10 +9,7 @@ import SwiftUI
 
 struct WelcomeView: View {
     
-    let subtitle = """
-    We're excited that
-    you're here
-    """
+    let viewModel = WelcomeViewModel()
     
     var body: some View {
         ZStack {
@@ -24,12 +21,16 @@ struct WelcomeView: View {
             
             VStack(alignment: .center) {
                 Spacer()
-                Title()
-                Text(subtitle)
+                
+                titleGroup
+                
+                Text(viewModel.subtitle)
                     .font(.system(size: 25, weight: .bold))
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
+                
                 Spacer()
+                
                 Button(action: {}) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
@@ -45,26 +46,15 @@ struct WelcomeView: View {
             .padding(.horizontal, 16)
         }
     }
-}
-
-struct Title: View {
-    let title = """
-    The time to
-    act is
-    """
     
-    let now = "now"
-    
-    let dot = "."
-    
-    var body: some View {
+    var titleGroup: some View {
         Group {
-            Text(title)
+            Text(viewModel.title)
                 .font(.system(size: 50, weight: .bold)).foregroundStyle(.white) +
-            Text(now)
+            Text(viewModel.now)
                 .font(.system(size: 50, weight: .bold))
                 .foregroundStyle(.green) +
-            Text(dot)
+            Text(viewModel.dot)
                 .font(.system(size: 50, weight: .bold))
                 .foregroundStyle(.white)
         }
