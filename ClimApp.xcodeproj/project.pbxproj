@@ -103,11 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				860B4C2F2AE95F2400977358 /* ClimAppApp.swift */,
-				860B4C5B2AE964F700977358 /* WelcomeView.swift */,
-				868AB8382AEA55E200D3B256 /* WelcomeViewModel.swift */,
-				860B4C5D2AE9651F00977358 /* MainView.swift */,
-				868AB8362AEA50D300D3B256 /* Project.swift */,
-				860B4C592AE9612C00977358 /* Assets.swift */,
+				868AB83C2AEA57AF00D3B256 /* Model */,
+				868AB83A2AEA57A500D3B256 /* View */,
+				868AB83B2AEA57AA00D3B256 /* ViewModel */,
+				868AB83D2AEA57B700D3B256 /* Utils */,
 				860B4C332AE95F2500977358 /* Assets.xcassets */,
 				860B4C352AE95F2500977358 /* Preview Content */,
 			);
@@ -137,6 +136,39 @@
 				860B4C4C2AE95F2500977358 /* ClimAppUITestsLaunchTests.swift */,
 			);
 			path = ClimAppUITests;
+			sourceTree = "<group>";
+		};
+		868AB83A2AEA57A500D3B256 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				860B4C5B2AE964F700977358 /* WelcomeView.swift */,
+				860B4C5D2AE9651F00977358 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		868AB83B2AEA57AA00D3B256 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				868AB8382AEA55E200D3B256 /* WelcomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		868AB83C2AEA57AF00D3B256 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				868AB8362AEA50D300D3B256 /* Project.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		868AB83D2AEA57B700D3B256 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				860B4C592AE9612C00977358 /* Assets.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
