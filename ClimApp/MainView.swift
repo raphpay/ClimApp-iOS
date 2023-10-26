@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     
+    let projects = Mock.projects
+    
     let text = """
     Let's neutralise your 
     carbon footprint
@@ -78,10 +80,24 @@ struct MainView: View {
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            ForEach(1..<4) { _ in
-                                RoundedRectangle(cornerRadius: 10)
-                                    .frame(width: 250, height : 150)
-                                    .foregroundColor(.red)
+                            ForEach(projects) { project in
+                                ZStack(alignment: .bottom) {
+                                    Image(project.image)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 250, height: 150)
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                    
+                                    VStack(alignment: .leading) {
+                                        Spacer()
+                                        Text(project.title)
+                                            .font(.system(size: 20, weight: .bold))
+                                        Text(project.subtitle)
+                                            .font(.system(size: 16, weight: .regular))
+                                    }
+                                    .padding()
+                                }
+                                .frame(width: 250, height: 150)
                             }
                         }
                     }

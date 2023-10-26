@@ -16,6 +16,7 @@
 		860B4C5A2AE9612C00977358 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C592AE9612C00977358 /* Assets.swift */; };
 		860B4C5C2AE964F700977358 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C5B2AE964F700977358 /* WelcomeView.swift */; };
 		860B4C5E2AE9651F00977358 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B4C5D2AE9651F00977358 /* MainView.swift */; };
+		868AB8372AEA50D300D3B256 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AB8362AEA50D300D3B256 /* Project.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		860B4C592AE9612C00977358 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		860B4C5B2AE964F700977358 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		860B4C5D2AE9651F00977358 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		868AB8362AEA50D300D3B256 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				860B4C2F2AE95F2400977358 /* ClimAppApp.swift */,
 				860B4C5B2AE964F700977358 /* WelcomeView.swift */,
 				860B4C5D2AE9651F00977358 /* MainView.swift */,
+				868AB8362AEA50D300D3B256 /* Project.swift */,
 				860B4C592AE9612C00977358 /* Assets.swift */,
 				860B4C332AE95F2500977358 /* Assets.xcassets */,
 				860B4C352AE95F2500977358 /* Preview Content */,
@@ -266,6 +269,7 @@
 				860B4C302AE95F2400977358 /* ClimAppApp.swift in Sources */,
 				860B4C5E2AE9651F00977358 /* MainView.swift in Sources */,
 				860B4C5C2AE964F700977358 /* WelcomeView.swift in Sources */,
+				868AB8372AEA50D300D3B256 /* Project.swift in Sources */,
 				860B4C5A2AE9612C00977358 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
