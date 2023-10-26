@@ -123,6 +123,7 @@ struct MainView: View {
         }
         .ignoresSafeArea()
         .foregroundStyle(Color.background)
+        .navigationBarBackButtonHidden()
     }
 }
 
