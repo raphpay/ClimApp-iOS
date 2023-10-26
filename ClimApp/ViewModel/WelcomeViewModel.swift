@@ -18,4 +18,6 @@ final class WelcomeViewModel: ObservableObject {
     We're excited that
     you're here
     """
+    
+    @Published var showMainScreen = false
 }

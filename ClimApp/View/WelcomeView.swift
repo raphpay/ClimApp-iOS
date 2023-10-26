@@ -9,8 +9,7 @@ import SwiftUI
 
 struct WelcomeView: View {
     
-    let viewModel = WelcomeViewModel()
-    @State var showMainScreen = false
+    @StateObject var viewModel = WelcomeViewModel()
     
     var body: some View {
         ZStack {
@@ -33,7 +32,7 @@ struct WelcomeView: View {
                 Spacer()
                 
                 Button(action: {
-                    showMainScreen = true
+                    viewModel.showMainScreen = true
                 }) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
@@ -48,7 +47,7 @@ struct WelcomeView: View {
             }
             .padding(.horizontal, 16)
         }
-        .navigationDestination(isPresented: $showMainScreen) {
+        .navigationDestination(isPresented: $viewModel.showMainScreen) {
             MainView()
         }
     }
