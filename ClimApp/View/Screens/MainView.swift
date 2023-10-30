@@ -9,15 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     
-    let projects = Mock.projects
-    let text = """
-    Let's neutralise your 
-    carbon footprint
-    """
-    let midScreenHeight = UIScreen.main.bounds.size.height / 2
-    
-    @State var showAllProjects = false
-    @State var showCarbonFootprintView = false
+    @StateObject var viewModel = MainViewModel()
     
     var body: some View {
         ZStack {
@@ -27,19 +19,21 @@ struct MainView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(maxWidth: .infinity)
-                        .frame(height: midScreenHeight)
+                        .frame(height: viewModel.midScreenHeight)
                         .clipped()
+                        .ignoresSafeArea()
                     VStack {
                         HStack {
                             Image(Assets.smallLogo)
                                 .resizable()
                                 .frame(width: 50, height: 50)
                                 .scaledToFill()
-                            Text("climApp")
+                            Text("climapp")
                                 .font(.body)
                                 .bold()
                                 .foregroundStyle(.white)
-                        }
+                        }                        
+                        .offset(y: 35)
                         
                         Spacer()
                         
@@ -51,7 +45,7 @@ struct MainView: View {
                                     .font(.system(size: 30, weight: .bold))
                                     .foregroundStyle(.white)
                             }
-                            Text(text)
+                            Text(viewModel.text)
                                 .font(.system(size: 25, weight: .regular))
                                 .foregroundStyle(.white)
                                 .multilineTextAlignment(.center)
@@ -68,7 +62,7 @@ struct MainView: View {
                             .foregroundStyle(.black)
                         Spacer()
                         Button(action: {
-                            showAllProjects = true
+                            viewModel.showAllProjects = true
                         }) {
                             Text("See all")
                                 .font(.headline)
@@ -83,7 +77,7 @@ struct MainView: View {
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            ForEach(projects) { project in
+                            ForEach(viewModel.projects) { project in
                                 ProjectView(project: project, width: 250, height: 150)
                             }
                         }
@@ -94,29 +88,28 @@ struct MainView: View {
                 }
                 .offset(y: 37.5)
                 .padding(.horizontal)
-                .frame(height : midScreenHeight)
+                .frame(height : viewModel.midScreenHeight)
             }
             
             Button(action: {
-                showCarbonFootprintView = true
+                viewModel.showCarbonFootprintView = true
             }) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
                         .foregroundColor(.green)
-                    Label("Calculate your carbon footprint", systemImage: "leaf.fill")
+                    Label("Calculate your carbon footprint", systemImage: SFSymbols.leafFill)
                         .foregroundStyle(.white)
                 }
             }
             .frame(height: 55)
             .padding(.horizontal, 16)
         }
-        .ignoresSafeArea()
         .foregroundStyle(Color.background)
         .navigationBarBackButtonHidden()
-        .navigationDestination(isPresented: $showAllProjects) {
+        .navigationDestination(isPresented: $viewModel.showAllProjects) {
             ProjectsView()
         }
-        .navigationDestination(isPresented: $showCarbonFootprintView) {
+        .navigationDestination(isPresented: $viewModel.showCarbonFootprintView) {
             FootprintView()
         }
     }

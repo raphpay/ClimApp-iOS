@@ -27,19 +27,12 @@ struct WelcomeView: View {
                 
                 Spacer()
                 
-                Button(action: {
+                Button("Sign Up") {
                     viewModel.showMainScreen = true
-                }) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(.green)
-                        Text("Sign Up")
-                            .font(.system(size: 18, weight: .regular))
-                            .foregroundStyle(.white)
-                    }
                 }
-                .frame(height: 55)
-                .padding(.horizontal, 16)
+                .tint(.green)
+                .controlSize(.large)
+                .buttonStyle(.borderedProminent)
             }
             .padding(.horizontal, 16)
         }

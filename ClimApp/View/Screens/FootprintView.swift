@@ -21,7 +21,7 @@ struct FootprintView: View {
             VStack {
                 HStack {
                     Button(action: { dismiss() }, label: {
-                        Image(systemName: "chevron.left")
+                        Image(systemName: SFSymbols.chevronLeft)
                             .imageScale(.large)
                             .bold()
                             .foregroundStyle(.white)
@@ -51,7 +51,7 @@ struct FootprintView: View {
                 }
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "arrow.right")
+                    Image(systemName: SFSymbols.arrowRight)
                         .imageScale(.large)
                         .bold()
                 })
