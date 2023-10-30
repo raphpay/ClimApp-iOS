@@ -27,6 +27,7 @@
 		86AA57C02AEFE0D3003F24F6 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA57BF2AEFE0D3003F24F6 /* Mocks.swift */; };
 		86AA57C22AEFE26A003F24F6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA57C12AEFE26A003F24F6 /* RoundedButton.swift */; };
 		86AA57C42AEFE532003F24F6 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA57C32AEFE532003F24F6 /* SFSymbols.swift */; };
+		86AA57C62AEFE65A003F24F6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA57C52AEFE65A003F24F6 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		86AA57BF2AEFE0D3003F24F6 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		86AA57C12AEFE26A003F24F6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		86AA57C32AEFE532003F24F6 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		86AA57C52AEFE65A003F24F6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				868AB8382AEA55E200D3B256 /* WelcomeViewModel.swift */,
+				86AA57C52AEFE65A003F24F6 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				86AA57C22AEFE26A003F24F6 /* RoundedButton.swift in Sources */,
 				860B4C5A2AE9612C00977358 /* Assets.swift in Sources */,
 				868AB8452AEA601700D3B256 /* FootprintView.swift in Sources */,
+				86AA57C62AEFE65A003F24F6 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
