@@ -35,5 +35,5 @@ struct MessageView: View {
 }
 
 #Preview {
-    MessageView(message: "Okay. This is a message that could appear in the bubble")
+    MessageView(message: Mock.startMessage.value)
 }

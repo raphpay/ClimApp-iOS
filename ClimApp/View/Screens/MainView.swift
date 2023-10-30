@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     
+    // TODO: Create a viewmodel
     let projects = Mock.projects
     let text = """
     Let's neutralise your 
@@ -29,17 +30,19 @@ struct MainView: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: midScreenHeight)
                         .clipped()
+                        .ignoresSafeArea()
                     VStack {
                         HStack {
                             Image(Assets.smallLogo)
                                 .resizable()
                                 .frame(width: 50, height: 50)
                                 .scaledToFill()
-                            Text("climApp")
+                            Text("climapp")
                                 .font(.body)
                                 .bold()
                                 .foregroundStyle(.white)
-                        }
+                        }                        
+                        .offset(y: 35)
                         
                         Spacer()
                         
@@ -103,14 +106,13 @@ struct MainView: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
                         .foregroundColor(.green)
-                    Label("Calculate your carbon footprint", systemImage: "leaf.fill")
+                    Label("Calculate your carbon footprint", systemImage: SFSymbols.leafFill)
                         .foregroundStyle(.white)
                 }
             }
             .frame(height: 55)
             .padding(.horizontal, 16)
         }
-        .ignoresSafeArea()
         .foregroundStyle(Color.background)
         .navigationBarBackButtonHidden()
         .navigationDestination(isPresented: $showAllProjects) {
